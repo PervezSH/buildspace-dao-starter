@@ -190,7 +190,7 @@ const App = () => {
     return(
       <div className="landing">
         <h1>
-          Welcome to SpaceDAO
+          Welcome to <span class="emoji">🚀</span>SpaceDAO
         </h1>
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           Connect your wallet
@@ -203,7 +203,7 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div className="member-page">
-        <h1> 🛸DAO Member Page</h1>
+        <h1> <span class="emoji">🛸</span>SpaceDAO Member Page</h1>
         <p>Congratulations on being a member</p>
         <div>
           <div>
