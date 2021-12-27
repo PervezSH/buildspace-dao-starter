@@ -1,11 +1,12 @@
-# buildspace x thirdweb - Build your own DAO with just Javascript
+# Space DAO with just Javascript
 
-### **Welcome 👋**
-To get started with this course, clone this repo and follow these commands:
+DAOs are taking over. Build my own Space DAO for fun with thirdweb.
 
-1. Run `npm install` at the root of your directory
-2. Run `npm start` to start the project
-3. Start coding!
+Deployed an ERC-1155 collection 🚀, an ERC-20 contract, deployed a governance contract and also setup treasury.
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://app.buildspace.so/projects/COb520aae3-7925-42f4-a5e7-eaf718933766) and link your Discord account so you can get access to helpful channels and your instructor!
+Have a 👀look by clicking the 🔗link given:
+https://pervezsh.github.io/space-dao/
+
+Connect your 🦊metamask wallet, mint a membership 💎NFT, and join my Space DAO🙃
+
+buildspace Guided Project
