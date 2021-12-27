@@ -4,7 +4,7 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
   color: #fff;
   overflow-x: hidden;
 }
@@ -40,6 +40,11 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   background-color: #f00;
+}
+
+.emoji {
+  font-family: "Segoe UI Emoji";
+  font-weight: 100;
 }
 
 .landing,
@@ -116,7 +121,6 @@ h1 {
 
 button {
   cursor: pointer;
-  background-color: #000;
   color: #fff;
   border: none;
   font-weight: bold;
@@ -125,6 +129,17 @@ button {
   text-transform: uppercase;
   border-radius: 3rem;
   font-size: 1.2rem;
+  background-image: linear-gradient(
+    to right,
+    #00ff62 0%,
+    #00ff88 0%,
+    #00ff88 21%,
+    #00fff2 52%,
+    #00eeff 78%,
+    #00e1ff 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
 }
 
 button:hover {
@@ -138,4 +153,39 @@ button:focus {
 button:disabled {
   opacity: 0.8;
   pointer-events: none;
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
