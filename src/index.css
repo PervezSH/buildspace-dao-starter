@@ -4,10 +4,11 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+  background: #000;
   color: #fff;
   overflow-x: hidden;
 }
+
 #root {
   min-height: 100vh;
   display: flex;
@@ -16,6 +17,7 @@ body {
 h1 {
   font-size: 5rem;
 }
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -62,24 +64,27 @@ h1 {
   text-align: center;
 }
 
-.member-page > div {
+.member-page>div {
   display: flex;
   flex-direction: row;
   width: 100%;
   text-align: left;
   gap: 2rem;
 }
-.member-page > div > div {
+
+.member-page>div>div {
   display: flex;
   flex-direction: column;
   width: 50%;
   gap: 1rem;
 }
+
 @media screen and (max-width: 768px) {
-  .member-page > div {
+  .member-page>div {
     flex-direction: column;
   }
-  .member-page > div > div {
+
+  .member-page>div>div {
     width: 100%;
   }
 }
@@ -90,7 +95,7 @@ h1 {
   gap: 1rem;
 }
 
-.member-page form > div {
+.member-page form>div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -101,7 +106,7 @@ h1 {
   color: #7700ee;
 }
 
-.member-page form .card > div {
+.member-page form .card>div {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
@@ -129,15 +134,13 @@ button {
   text-transform: uppercase;
   border-radius: 3rem;
   font-size: 1.2rem;
-  background-image: linear-gradient(
-    to right,
-    #00ff62 0%,
-    #00ff88 0%,
-    #00ff88 21%,
-    #00fff2 52%,
-    #00eeff 78%,
-    #00e1ff 100%
-  );
+  background-image: linear-gradient(to right,
+      #00ff62 0%,
+      #00ff88 0%,
+      #00ff88 21%,
+      #00fff2 52%,
+      #00eeff 78%,
+      #00e1ff 100%);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
 }
@@ -160,31 +163,39 @@ button:disabled {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 @-moz-keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
